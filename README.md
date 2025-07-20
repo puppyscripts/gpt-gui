@@ -1,6 +1,6 @@
-# AI Chatbot with GUI
+# GUI interface for GPT
 
-This project is an advanced AI chatbot that uses natural language processing (NLP) to understand and respond to user queries. The chatbot is built using Python and features a graphical user interface (GUI) created with Tkinter.
+This project is a gui interface for openai's gpt model. The is built using Python and features a graphical user interface (GUI) created with Tkinter.
 
 ## Features
 - **Natural Language Understanding**: Powered by OpenAI's GPT model.
