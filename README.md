@@ -1,4 +1,4 @@
-# AI Chatbot with GUI
+# GUI interface for GPT
 
 This project is a gui interface for openai's gpt model. The is built using Python and features a graphical user interface (GUI) created with Tkinter.
 
