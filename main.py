@@ -8,7 +8,7 @@ os.system('cls')
 
 # Initialize OpenAI API
 client = OpenAI(
-    api_key="enter-api-key-here"  # Ensure your API key is set in the environment variables
+    api_key="your-api-key-here"  # Ensure your API key is set in the environment variables
 )
 
 def get_response(prompt):
@@ -16,7 +16,7 @@ def get_response(prompt):
         # Use the Responses API to generate text
         response = client.responses.create(
             model="gpt-4o-mini",
-            instructions="You are an advanced AI chatbot.",
+            instructions="You are my friend.",
             input=prompt
         )
         return response.output_text.strip()
@@ -30,13 +30,13 @@ def send_message(event=None):  # Add event parameter for keybind compatibility
     user_entry.delete(0, tk.END)
 
     bot_response = get_response(user_input)
-    chat_area.insert(tk.END, f"Bot: {bot_response}\n\n")
+    chat_area.insert(tk.END, f"GPT: {bot_response}\n\n")
 
     # Automatically scroll to the bottom
     chat_area.see(tk.END)
 
 root = tk.Tk()
-root.title("AI Chatbot")
+root.title("AI Chat")
 
 # Styling changes
 root.configure(bg="#2c2c2c")  # Dark grey background
